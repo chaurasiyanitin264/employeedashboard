@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./edit.css">
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: blueviolet;
+    width: 250px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    top: 57px;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    align-items: center;
+    /* border-radius: 50px; */
+}
+
+.sidebar li i {
+    margin-right: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* border-radius: 50px; */
+}
+
+.sidebar a:hover {
+    color: white;
+    background-color: red;
+    /* margin-left: 250px;
+    height: 100vh; */
+}
+.hello {
+    margin-left: 250px;
+    height: 100vh;
+}
+.hello1 {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60%;
+}
+
+.search input {
+    border: none;
+    background-color: white;
+    padding: 10px;
+    width: calc(100% - 50px);
+    border-radius: 5px 0 0 5px;
+}
+
+.search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search button i {
+    color: blueviolet;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: brown;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: white;
+    color: brown;
+    padding: 3px 8px;
+    border: 2px solid brown;
+}
+
+.img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+#demo{
+    /* position: fixed; */
+  margin-left: 250px;
+  position: fixed;
+  top: 65px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1 id="logoname">LOGO</h1>
+        <ul>
+            <li><a href="./crud.HTML"><i class="fa-solid fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa-regular fa-pen-to-square"></i>Edit Table</a></li>
+            <li><a href="./updatedemo.html"><i class="fa-solid fa-square"></i>Update Table</a></li>
+            <li><a href="./insert.html"><i class="fa-regular fa-pen-to-square"></i>Insert table</a></li>
+            <li><a href="#"><i class="fa-solid fa-credit-card"></i> Payment</a></li>
+            <li><a href="#"><i class="fa-solid fa-cogs"></i> Settings</a></li>
+            <li><a href="../l & r form/index.html"><i class="fa-solid fa-question-circle"></i> Help</a></li>
+        </ul>
+    </div>
+
+    <div class="hello">
+        <div class="hello1">
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="user">
+                <a href="./crud.HTML" class="btn">Home</a>
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                <div class="img">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/025/067/762/small/4k-beautiful-colorful-abstract-wallpaper-photo.jpg"
+                        alt="User Image">
+                </div>
+            </div>
+        </div>
+
+   
+    </div>
+
+
+
+    <h1 id="demo"></h1>
+    <script src="display.js"></script>
+</body>
+
+</html>
